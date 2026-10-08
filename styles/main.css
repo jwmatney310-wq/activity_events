@@ -1,0 +1,131 @@
+/* Jackson Matney | October 8, 2026 */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #f0f5fa;
+    color: #203040;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    padding: 24px 16px;
+    background-color: #175b94;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+    line-height: 1.2;
+}
+
+header p {
+    margin: 10px 0 0;
+}
+
+main {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 24px 16px;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 24px;
+    border: 1px solid #ccd8e3;
+    border-radius: 6px;
+    background-color: white;
+}
+
+h2 {
+    margin: 0 0 8px;
+    color: #175b94;
+    font-size: 1.4rem;
+}
+
+h3 {
+    margin: 24px 0 4px;
+    font-size: 1.1rem;
+}
+
+button {
+    max-width: 100%;
+    padding: 10px 20px;
+    border: 2px solid #175b94;
+    border-radius: 4px;
+    background-color: #175b94;
+    color: white;
+    font: inherit;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #103d63;
+}
+
+button.changed-button {
+    border-color: #9b7400;
+    background-color: #ffe49a;
+    color: #203040;
+}
+
+.hover-box {
+    padding: 20px;
+    border: 2px solid #175b94;
+    border-radius: 4px;
+    background-color: #e8f2fc;
+    color: #175b94;
+    text-align: center;
+    font-weight: bold;
+}
+
+.hover-active {
+    background-color: #175b94;
+    color: white;
+}
+
+button:focus-visible,
+.hover-box:focus-visible {
+    outline: 3px solid #175b94;
+    outline-offset: 3px;
+}
+
+dt {
+    margin-top: 16px;
+    font-weight: bold;
+}
+
+dd {
+    margin: 5px 0 0;
+}
+
+code {
+    font-size: 0.95rem;
+}
+
+footer {
+    padding: 16px;
+    background-color: #103d63;
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media screen and (max-width: 599px) {
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    section {
+        padding: 16px;
+    }
+}

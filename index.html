@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- Jackson Matney | October 8, 2026 -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using jQuery Selectors and Events</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/jquery-3.7.1.min.js"></script>
+    <script src="scripts/events.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Using jQuery Selectors and Events</h1>
+        <p>Jackson Matney | CTI110</p>
+    </header>
+    <main>
+        <section>
+            <h2>Try the Events</h2>
+
+            <h3>Click</h3>
+            <p>Click this button to change its text.</p>
+            <button type="button" id="click-button">Click me</button>
+
+            <h3>Double-click</h3>
+            <p>Double-click this button to change its color and text. Double-click again to reset it. You can also press Enter or Space while it is focused.</p>
+            <button type="button" class="double-button">Double-click me</button>
+
+            <h3>Hover</h3>
+            <p>Move your pointer over the box to change its appearance. Move away to reset it. You can also use Tab to focus the box.</p>
+            <p class="hover-box" tabindex="0">Hover over me</p>
+        </section>
+        <section>
+            <h2>Selectors Used</h2>
+            <dl>
+                <dt><code>$("#click-button")</code></dt>
+                <dd>The # selects the element with the ID click-button. Its click event changes the button's text.</dd>
+
+                <dt><code>$(".double-button")</code></dt>
+                <dd>The dot selects elements with the class double-button. Its double-click event toggles a CSS class and changes the button's text.</dd>
+
+                <dt><code>$("p.hover-box")</code></dt>
+                <dd>This selects paragraph elements with the class hover-box. The mouseenter and mouseleave events change the paragraph's style and text as the pointer enters and leaves.</dd>
+            </dl>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Jackson Matney</p>
+    </footer>
+</body>
+</html>
